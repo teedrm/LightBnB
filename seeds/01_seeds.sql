@@ -13,11 +13,13 @@ VALUES
 
 
 INSERT INTO reservations (start_date, end_date, property_id, guest_id)
-VALUES ('2022-12-01', '2023-12-01', 1, 1),
+VALUES 
+('2022-12-01', '2023-12-01', 1, 1),
 ('2023-02-01', '2024-02-01', 2, 2),
 ('2023-01-01', '2024-01-01', 3, 3);
 
 INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message)
-VALUES (1, 1, 1, 3, 'message'),
+VALUES 
+(1, 1, 1, 3, 'message'),
 (2, 2, 2, 5, 'message'),
 (3, 3, 3, 3.5, 'message');
