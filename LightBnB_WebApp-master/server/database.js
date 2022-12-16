@@ -100,8 +100,7 @@ const getAllReservations = function(guest_id, limit = 10) {
       return result.rows[0];
     })
     .catch((err) => {
-      console.log('addUser error', err.message);
-      return null;
+      console.log(err.message);
     });
 };
 exports.getAllReservations = getAllReservations;
